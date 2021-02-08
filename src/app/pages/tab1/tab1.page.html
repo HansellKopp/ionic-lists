@@ -1,0 +1,13 @@
+<ion-header [translucent]="true" color="dark">
+  <ion-toolbar class="ion-noborder" color="dark">
+    <ion-title>Pendings</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" color="dark">
+  <app-lists [status]="'pending'"></app-lists>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" color="tertiary">
+    <ion-fab-button (click)="presentAddTaskslist()"> 
+      <ion-icon name="add-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
